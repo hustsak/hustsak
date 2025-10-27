@@ -251,3 +251,4 @@
 [2025-10-26T23:14:47+07:00] research: tune hyperparameter learning rate schedules [log #15]
 [2025-10-26T09:14:33+07:00] research: test distributed model checkpointing [log #16]
 [2025-10-27T23:12:43+07:00] research: profile GPU memory allocation during training [log #17]
+[2025-10-27T11:55:52+07:00] research: fine-tune vision transformer backbone [log #18]
