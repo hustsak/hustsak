@@ -261,3 +261,4 @@
 [2025-10-30T09:47:22+07:00] research: update research experiment benchmarks [log #25]
 [2025-10-30T13:58:01+07:00] research: implement feature extraction pipelines [log #26]
 [2025-10-30T20:28:11+07:00] research: update research experiment benchmarks [log #27]
+[2025-10-30T12:40:48+07:00] research: profile GPU memory allocation during training [log #28]
