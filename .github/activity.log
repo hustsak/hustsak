@@ -270,3 +270,4 @@
 [2025-11-02T08:04:27+07:00] research: profile GPU memory allocation during training [log #34]
 [2025-11-02T13:34:54+07:00] research: benchmark object tracking latency [log #35]
 [2025-11-02T19:02:03+07:00] research: implement feature extraction pipelines [log #36]
+[2025-11-02T21:27:00+07:00] research: refactor neural model evaluation metrics [log #37]
