@@ -292,3 +292,4 @@
 [2025-11-07T16:28:08+07:00] research: tune hyperparameter learning rate schedules [log #56]
 [2025-11-07T15:49:55+07:00] research: enhance gradient clipping stability [log #57]
 [2025-11-07T22:26:19+07:00] research: enhance gradient clipping stability [log #58]
+[2025-11-08T12:11:52+07:00] research: add data augmentation transformations [log #59]
