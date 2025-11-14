@@ -323,3 +323,4 @@
 [2025-11-13T13:42:04+07:00] research: enhance gradient clipping stability [log #87]
 [2025-11-13T18:04:52+07:00] research: benchmark object tracking latency [log #88]
 [2025-11-14T15:18:09+07:00] research: tune hyperparameter learning rate schedules [log #89]
+[2025-11-14T16:07:42+07:00] research: add data augmentation transformations [log #90]
