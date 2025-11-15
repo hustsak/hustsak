@@ -328,3 +328,4 @@
 [2025-11-14T09:58:04+07:00] research: clean and normalize dataset features [log #92]
 [2025-11-14T22:54:21+07:00] research: profile GPU memory allocation during training [log #93]
 [2025-11-15T20:26:45+07:00] research: update research experiment benchmarks [log #94]
+[2025-11-15T22:18:49+07:00] research: implement feature extraction pipelines [log #95]
