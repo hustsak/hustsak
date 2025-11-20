@@ -340,3 +340,4 @@
 [2025-11-18T20:24:03+07:00] research: update exploratory data analysis notebooks [log #104]
 [2025-11-19T12:22:04+07:00] research: fine-tune vision transformer backbone [log #105]
 [2025-11-19T16:06:49+07:00] research: tune hyperparameter learning rate schedules [log #106]
+[2025-11-20T20:28:27+07:00] research: add data augmentation transformations [log #107]
