@@ -351,3 +351,4 @@
 [2025-11-22T12:33:32+07:00] research: add data augmentation transformations [log #115]
 [2025-11-23T23:51:04+07:00] research: evaluate cross-validation performance [log #116]
 [2025-11-23T15:18:56+07:00] research: add data augmentation transformations [log #117]
+[2025-11-23T23:25:43+07:00] research: profile GPU memory allocation during training [log #118]
