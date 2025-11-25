@@ -359,3 +359,4 @@
 [2025-11-24T21:23:41+07:00] research: clean and normalize dataset features [log #123]
 [2025-11-24T20:44:04+07:00] research: refactor neural model evaluation metrics [log #124]
 [2025-11-25T10:44:02+07:00] research: refactor neural model evaluation metrics [log #125]
+[2025-11-25T16:26:16+07:00] research: fine-tune vision transformer backbone [log #126]
