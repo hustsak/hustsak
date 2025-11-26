@@ -363,3 +363,4 @@
 [2025-11-26T09:28:03+07:00] research: tune hyperparameter learning rate schedules [log #127]
 [2025-11-26T15:00:51+07:00] research: benchmark object tracking latency [log #128]
 [2025-11-26T21:42:39+07:00] research: fine-tune vision transformer backbone [log #129]
+[2025-11-26T20:05:01+07:00] research: profile GPU memory allocation during training [log #130]
