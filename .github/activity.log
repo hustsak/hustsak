@@ -361,3 +361,4 @@
 [2025-11-25T10:44:02+07:00] research: refactor neural model evaluation metrics [log #125]
 [2025-11-25T16:26:16+07:00] research: fine-tune vision transformer backbone [log #126]
 [2025-11-26T09:28:03+07:00] research: tune hyperparameter learning rate schedules [log #127]
+[2025-11-26T15:00:51+07:00] research: benchmark object tracking latency [log #128]
