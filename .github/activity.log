@@ -370,3 +370,4 @@
 [2025-11-27T09:44:21+07:00] research: refactor neural model evaluation metrics [log #134]
 [2025-11-27T13:19:37+07:00] research: evaluate cross-validation performance [log #135]
 [2025-11-27T21:57:34+07:00] research: evaluate cross-validation performance [log #136]
+[2025-11-27T08:27:55+07:00] research: profile GPU memory allocation during training [log #137]
