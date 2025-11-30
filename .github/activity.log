@@ -384,3 +384,4 @@
 [2025-11-29T21:58:52+07:00] research: tune hyperparameter learning rate schedules [log #148]
 [2025-11-30T19:20:59+07:00] research: profile GPU memory allocation during training [log #149]
 [2025-11-30T23:56:01+07:00] research: preprocess multimodal sensor telemetry [log #150]
+[2025-11-30T10:30:23+07:00] research: update exploratory data analysis notebooks [log #151]
