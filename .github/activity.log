@@ -419,3 +419,4 @@
 [2025-12-10T17:17:30+07:00] research: implement feature extraction pipelines [log #183]
 [2025-12-10T13:17:55+07:00] research: evaluate cross-validation performance [log #184]
 [2025-12-10T08:10:39+07:00] research: add data augmentation transformations [log #185]
+[2025-12-10T17:23:48+07:00] research: profile GPU memory allocation during training [log #186]
