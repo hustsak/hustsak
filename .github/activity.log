@@ -428,3 +428,4 @@
 [2025-12-11T11:44:46+07:00] research: update research experiment benchmarks [log #192]
 [2025-12-11T21:20:32+07:00] research: optimize YOLOv11 inference pipeline [log #193]
 [2025-12-11T23:44:56+07:00] research: update research experiment benchmarks [log #194]
+[2025-12-12T17:08:08+07:00] research: implement feature extraction pipelines [log #195]
