@@ -435,3 +435,4 @@
 [2025-12-13T10:26:14+07:00] research: update research experiment benchmarks [log #199]
 [2025-12-13T21:11:41+07:00] research: optimize YOLOv11 inference pipeline [log #200]
 [2025-12-13T17:32:53+07:00] research: update exploratory data analysis notebooks [log #201]
+[2025-12-14T17:35:35+07:00] research: fine-tune vision transformer backbone [log #202]
