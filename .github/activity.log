@@ -444,3 +444,4 @@
 [2025-12-15T16:40:52+07:00] research: profile GPU memory allocation during training [log #208]
 [2025-12-15T18:12:45+07:00] research: update exploratory data analysis notebooks [log #209]
 [2025-12-15T23:24:22+07:00] research: update research experiment benchmarks [log #210]
+[2025-12-16T20:13:33+07:00] research: clean and normalize dataset features [log #211]
