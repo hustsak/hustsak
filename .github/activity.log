@@ -470,3 +470,4 @@
 [2025-12-22T09:47:26+07:00] research: update exploratory data analysis notebooks [log #234]
 [2025-12-23T16:57:57+07:00] research: benchmark object tracking latency [log #235]
 [2025-12-23T10:29:58+07:00] research: optimize YOLOv11 inference pipeline [log #236]
+[2025-12-23T19:18:37+07:00] research: profile GPU memory allocation during training [log #237]
