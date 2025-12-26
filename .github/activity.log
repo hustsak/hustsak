@@ -474,3 +474,4 @@
 [2025-12-23T12:48:50+07:00] research: update research experiment benchmarks [log #238]
 [2025-12-24T22:24:25+07:00] research: benchmark object tracking latency [log #239]
 [2025-12-24T09:24:05+07:00] research: update exploratory data analysis notebooks [log #240]
+[2025-12-26T14:37:34+07:00] research: fine-tune vision transformer backbone [log #241]
