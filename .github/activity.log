@@ -507,3 +507,4 @@
 [2026-01-02T09:45:22+07:00] research: profile GPU memory allocation during training [log #271]
 [2026-01-02T17:47:38+07:00] research: add data augmentation transformations [log #272]
 [2026-01-02T10:06:59+07:00] research: implement feature extraction pipelines [log #273]
+[2026-01-03T16:28:42+07:00] research: refactor neural model evaluation metrics [log #274]
