@@ -549,3 +549,4 @@
 [2026-01-12T22:54:18+07:00] research: tune hyperparameter learning rate schedules [log #313]
 [2026-01-12T19:33:14+07:00] research: add data augmentation transformations [log #314]
 [2026-01-12T15:44:21+07:00] research: add data augmentation transformations [log #315]
+[2026-01-12T10:51:21+07:00] research: profile GPU memory allocation during training [log #316]
