@@ -561,3 +561,4 @@
 [2026-01-14T11:12:36+07:00] research: optimize YOLOv11 inference pipeline [log #325]
 [2026-01-14T09:33:04+07:00] research: benchmark object tracking latency [log #326]
 [2026-01-14T12:25:59+07:00] research: profile GPU memory allocation during training [log #327]
+[2026-01-15T20:28:17+07:00] research: preprocess multimodal sensor telemetry [log #328]
