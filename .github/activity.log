@@ -570,3 +570,4 @@
 [2026-01-16T10:44:09+07:00] research: optimize YOLOv11 inference pipeline [log #334]
 [2026-01-17T12:43:07+07:00] research: enhance gradient clipping stability [log #335]
 [2026-01-17T15:42:43+07:00] research: update research experiment benchmarks [log #336]
+[2026-01-17T09:06:23+07:00] research: benchmark object tracking latency [log #337]
