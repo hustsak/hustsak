@@ -607,3 +607,4 @@
 [2026-01-26T15:42:52+07:00] research: benchmark object tracking latency [log #371]
 [2026-01-27T17:57:54+07:00] research: fine-tune vision transformer backbone [log #372]
 [2026-01-27T22:59:49+07:00] research: tune hyperparameter learning rate schedules [log #373]
+[2026-01-27T19:07:02+07:00] research: optimize YOLOv11 inference pipeline [log #374]
