@@ -614,3 +614,4 @@
 [2026-01-28T18:40:23+07:00] research: tune hyperparameter learning rate schedules [log #378]
 [2026-01-29T10:52:41+07:00] research: implement feature extraction pipelines [log #379]
 [2026-01-29T08:39:53+07:00] research: optimize YOLOv11 inference pipeline [log #380]
+[2026-01-30T21:41:33+07:00] research: refactor neural model evaluation metrics [log #381]
