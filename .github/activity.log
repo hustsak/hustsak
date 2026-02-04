@@ -639,3 +639,4 @@
 [2026-02-03T20:43:14+07:00] research: profile GPU memory allocation during training [log #403]
 [2026-02-03T08:26:39+07:00] research: optimize YOLOv11 inference pipeline [log #404]
 [2026-02-04T09:13:35+07:00] research: optimize YOLOv11 inference pipeline [log #405]
+[2026-02-04T10:06:00+07:00] research: clean and normalize dataset features [log #406]
