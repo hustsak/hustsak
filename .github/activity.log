@@ -762,3 +762,4 @@
 [2026-03-06T09:16:59+07:00] research: update exploratory data analysis notebooks [log #526]
 [2026-03-06T18:34:49+07:00] research: tune hyperparameter learning rate schedules [log #527]
 [2026-03-06T08:56:34+07:00] research: test distributed model checkpointing [log #528]
+[2026-03-07T14:05:02+07:00] research: refactor neural model evaluation metrics [log #529]
