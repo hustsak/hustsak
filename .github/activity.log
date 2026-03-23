@@ -821,3 +821,4 @@
 [2026-03-22T11:20:10+07:00] research: refactor neural model evaluation metrics [log #585]
 [2026-03-23T21:02:18+07:00] research: implement feature extraction pipelines [log #586]
 [2026-03-23T13:32:34+07:00] research: clean and normalize dataset features [log #587]
+[2026-03-23T16:59:32+07:00] research: fine-tune vision transformer backbone [log #588]
