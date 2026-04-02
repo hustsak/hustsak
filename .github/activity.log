@@ -864,3 +864,4 @@
 [2026-04-02T18:09:38+07:00] research: update exploratory data analysis notebooks [log #628]
 [2026-04-02T19:42:48+07:00] research: test distributed model checkpointing [log #629]
 [2026-04-02T15:19:54+07:00] research: implement feature extraction pipelines [log #630]
+[2026-04-02T14:57:10+07:00] research: profile GPU memory allocation during training [log #631]
