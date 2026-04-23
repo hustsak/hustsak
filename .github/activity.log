@@ -936,3 +936,4 @@
 [2026-04-22T17:55:51+07:00] research: add data augmentation transformations [log #700]
 [2026-04-23T10:01:32+07:00] research: benchmark object tracking latency [log #701]
 [2026-04-23T10:06:14+07:00] research: fine-tune vision transformer backbone [log #702]
+[2026-04-23T10:52:37+07:00] research: update exploratory data analysis notebooks [log #703]
