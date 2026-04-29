@@ -5,3 +5,4 @@
 [2026-04-28T17:57:38+07:00] research: tune hyperparameter learning rate schedules [log #5]
 [2026-04-29T12:31:41+07:00] research: profile GPU memory allocation during training [log #6]
 [2026-04-29T17:25:26+07:00] research: implement feature extraction pipelines [log #7]
+[2026-04-29T21:29:28+07:00] research: refactor neural model evaluation metrics [log #8]
