@@ -9,3 +9,4 @@
 [2026-04-29T15:01:37+07:00] research: fine-tune vision transformer backbone [log #9]
 [2026-05-01T22:44:43+07:00] research: update research experiment benchmarks [log #10]
 [2026-05-03T10:10:34+07:00] research: clean and normalize dataset features [log #11]
+[2026-05-05T10:39:35+07:00] research: benchmark object tracking latency [log #12]
