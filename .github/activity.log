@@ -25,3 +25,4 @@
 [2026-05-12T12:42:59+07:00] research: optimize YOLOv11 inference pipeline [log #25]
 [2026-05-12T19:31:15+07:00] research: benchmark object tracking latency [log #26]
 [2026-05-14T10:27:51+07:00] research: refactor neural model evaluation metrics [log #27]
+[2026-05-14T10:54:12+07:00] research: refactor neural model evaluation metrics [log #28]
