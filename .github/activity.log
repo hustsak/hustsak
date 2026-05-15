@@ -1006,3 +1006,4 @@
 [2026-05-13T16:16:19+07:00] research: optimize YOLOv11 inference pipeline [log #770]
 [2026-05-14T22:14:14+07:00] research: clean and normalize dataset features [log #771]
 [2026-05-14T12:35:24+07:00] research: refactor neural model evaluation metrics [log #772]
+[2026-05-15T23:36:51+07:00] research: update exploratory data analysis notebooks [log #773]
