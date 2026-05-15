@@ -1007,3 +1007,4 @@
 [2026-05-14T22:14:14+07:00] research: clean and normalize dataset features [log #771]
 [2026-05-14T12:35:24+07:00] research: refactor neural model evaluation metrics [log #772]
 [2026-05-15T23:36:51+07:00] research: update exploratory data analysis notebooks [log #773]
+[2026-05-15T13:49:35+07:00] research: profile GPU memory allocation during training [log #774]
