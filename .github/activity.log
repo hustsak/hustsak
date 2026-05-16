@@ -1014,3 +1014,4 @@
 [2026-05-16T10:51:07+07:00] research: add data augmentation transformations [log #778]
 [2026-05-16T20:01:56+07:00] research: implement feature extraction pipelines [log #779]
 [2026-05-16T09:49:14+07:00] research: implement feature extraction pipelines [log #780]
+[2026-05-16T14:57:34+07:00] research: refactor neural model evaluation metrics [log #781]
