@@ -1016,3 +1016,4 @@
 [2026-05-16T09:49:14+07:00] research: implement feature extraction pipelines [log #780]
 [2026-05-16T14:57:34+07:00] research: refactor neural model evaluation metrics [log #781]
 [2026-05-16T14:57:02+07:00] research: test distributed model checkpointing [log #782]
+[2026-05-17T14:37:04+07:00] research: fine-tune vision transformer backbone [log #783]
