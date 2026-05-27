@@ -1058,3 +1058,4 @@
 [2026-05-26T14:45:52+07:00] research: update exploratory data analysis notebooks [log #822]
 [2026-05-26T09:06:10+07:00] research: refactor neural model evaluation metrics [log #823]
 [2026-05-26T09:47:35+07:00] research: update exploratory data analysis notebooks [log #824]
+[2026-05-27T20:20:00+07:00] research: profile GPU memory allocation during training [log #825]
