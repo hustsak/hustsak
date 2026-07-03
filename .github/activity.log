@@ -86,3 +86,4 @@
 [2026-07-02T10:04:12+07:00] research: clean and normalize dataset features [log #86]
 [2026-07-02T11:41:06+07:00] research: update exploratory data analysis notebooks [log #87]
 [2026-07-03T22:28:18+07:00] research: implement feature extraction pipelines [log #88]
+[2026-07-03T22:07:10+07:00] research: add data augmentation transformations [log #89]
