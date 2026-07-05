@@ -1208,3 +1208,4 @@
 [2026-07-04T09:17:26+07:00] research: evaluate cross-validation performance [log #972]
 [2026-07-04T13:23:42+07:00] research: tune hyperparameter learning rate schedules [log #973]
 [2026-07-04T20:09:41+07:00] research: optimize YOLOv11 inference pipeline [log #974]
+[2026-07-05T20:20:54+07:00] research: update exploratory data analysis notebooks [log #975]
