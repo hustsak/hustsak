@@ -1254,3 +1254,4 @@
 [2026-07-16T20:44:17+07:00] research: add data augmentation transformations [log #1018]
 [2026-07-16T13:27:23+07:00] research: clean and normalize dataset features [log #1019]
 [2026-07-16T14:40:53+07:00] research: benchmark object tracking latency [log #1020]
+[2026-07-17T10:15:46+07:00] research: refactor neural model evaluation metrics [log #1021]
