@@ -1286,3 +1286,4 @@
 [2026-07-27T15:35:15+07:00] research: fine-tune vision transformer backbone [log #1050]
 [2026-07-28T13:23:55+07:00] research: profile GPU memory allocation during training [log #1051]
 [2026-07-28T20:18:41+07:00] research: optimize YOLOv11 inference pipeline [log #1052]
+[2026-07-28T20:24:06+07:00] research: refactor neural model evaluation metrics [log #1053]
