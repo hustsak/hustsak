@@ -1311,3 +1311,4 @@
 [2026-08-03T10:46:29+07:00] research: update research experiment benchmarks [log #1075]
 [2026-08-03T12:08:43+07:00] research: optimize YOLOv11 inference pipeline [log #1076]
 [2026-08-03T12:21:20+07:00] research: enhance gradient clipping stability [log #1077]
+[2026-08-03T21:20:17+07:00] research: profile GPU memory allocation during training [log #1078]
