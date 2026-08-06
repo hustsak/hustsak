@@ -131,3 +131,4 @@
 [2026-08-01T15:01:26+07:00] research: fine-tune vision transformer backbone [log #131]
 [2026-08-06T19:28:16+07:00] research: evaluate cross-validation performance [log #132]
 [2026-08-06T22:09:24+07:00] research: implement feature extraction pipelines [log #133]
+[2026-08-06T11:09:00+07:00] research: refactor neural model evaluation metrics [log #134]
