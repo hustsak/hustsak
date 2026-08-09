@@ -1336,3 +1336,4 @@
 [2026-08-08T22:52:44+07:00] research: update research experiment benchmarks [log #1100]
 [2026-08-08T10:41:49+07:00] research: implement feature extraction pipelines [log #1101]
 [2026-08-09T21:25:40+07:00] research: evaluate cross-validation performance [log #1102]
+[2026-08-09T08:08:23+07:00] research: refactor neural model evaluation metrics [log #1103]
