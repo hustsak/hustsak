@@ -1343,3 +1343,4 @@
 [2026-08-10T13:49:29+07:00] research: implement feature extraction pipelines [log #1107]
 [2026-08-10T12:36:58+07:00] research: fine-tune vision transformer backbone [log #1108]
 [2026-08-10T18:46:06+07:00] research: add data augmentation transformations [log #1109]
+[2026-08-10T09:00:59+07:00] research: refactor neural model evaluation metrics [log #1110]
