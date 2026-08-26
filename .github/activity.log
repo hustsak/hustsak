@@ -1419,3 +1419,4 @@
 [2026-08-25T17:15:57+07:00] research: refactor neural model evaluation metrics [log #1183]
 [2026-08-26T15:40:07+07:00] research: optimize YOLOv11 inference pipeline [log #1184]
 [2026-08-26T12:48:46+07:00] research: evaluate cross-validation performance [log #1185]
+[2026-08-26T12:59:33+07:00] research: refactor neural model evaluation metrics [log #1186]
