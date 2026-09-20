@@ -1503,3 +1503,4 @@
 [2026-09-20T14:31:49+07:00] research: fine-tune vision transformer backbone [log #1267]
 [2026-09-20T10:27:00+07:00] research: add data augmentation transformations [log #1268]
 [2026-09-20T12:40:14+07:00] research: add data augmentation transformations [log #1269]
+[2026-09-20T20:33:44+07:00] research: refactor neural model evaluation metrics [log #1270]
