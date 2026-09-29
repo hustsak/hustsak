@@ -1541,3 +1541,4 @@
 [2026-09-28T17:46:35+07:00] research: refactor neural model evaluation metrics [log #1305]
 [2026-09-28T17:17:23+07:00] research: refactor neural model evaluation metrics [log #1306]
 [2026-09-29T13:42:47+07:00] research: test distributed model checkpointing [log #1307]
+[2026-09-29T12:25:46+07:00] research: profile GPU memory allocation during training [log #1308]
