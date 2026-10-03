@@ -1,0 +1,286 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#0d1b2a" stop-opacity="0.9"/>
+      <stop offset="45%" stop-color="#060913" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#020408" stop-opacity="1"/>
+    </radialGradient>
+
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.8"/>
+      <stop offset="35%" stop-color="#7928ca" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#ff007a" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="cyberCyanPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="50%" stop-color="#9d4edd"/>
+      <stop offset="100%" stop-color="#ff007a"/>
+    </linearGradient>
+
+    <linearGradient id="chromeText" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#e0f7fa"/>
+      <stop offset="50%" stop-color="#80deea"/>
+      <stop offset="70%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#b2ebf2"/>
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#7928ca" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#ff007a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f3ff" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur1"/>
+      <feGaussianBlur stdDeviation="15" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00f3ff" stroke-width="0.75" stroke-opacity="0.08"/>
+      <circle cx="40" cy="0" r="1" fill="#00f3ff" fill-opacity="0.2"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseCore {
+      0%, 100% { transform: scale(1); opacity: 0.85; }
+      50% { transform: scale(1.18); opacity: 1; }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-420px); }
+      100% { transform: translateY(420px); }
+    }
+    @keyframes dashMove {
+      0% { stroke-dashoffset: 200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes dashMoveRev {
+      0% { stroke-dashoffset: -200; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+      50% { transform: translateY(-12px) translateX(8px); opacity: 0.9; }
+    }
+    @keyframes blinkDot {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+    @keyframes rotateRing {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes rotateRingRev {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .pulse-core {
+      transform-origin: 600px 210px;
+      animation: pulseCore 4s ease-in-out infinite;
+    }
+    .scanner {
+      animation: scanline 6s linear infinite;
+    }
+    .flow-line {
+      stroke-dasharray: 8, 12;
+      animation: dashMove 3s linear infinite;
+    }
+    .flow-line-rev {
+      stroke-dasharray: 6, 10;
+      animation: dashMoveRev 4s linear infinite;
+    }
+    .p-float1 { animation: floatParticle 5s ease-in-out infinite; }
+    .p-float2 { animation: floatParticle 7s ease-in-out infinite 1.5s; }
+    .p-float3 { animation: floatParticle 6s ease-in-out infinite 3s; }
+    .blinker { animation: blinkDot 1.4s ease-in-out infinite; }
+    .spin-ring {
+      transform-origin: 600px 210px;
+      animation: rotateRing 20s linear infinite;
+    }
+    .spin-ring-rev {
+      transform-origin: 600px 210px;
+      animation: rotateRingRev 14s linear infinite;
+    }
+    .mono {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    }
+    .title-text {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 900;
+      letter-spacing: 0.18em;
+    }
+    .subtitle-text {
+      font-family: 'JetBrains Mono', monospace;
+      letter-spacing: 0.3em;
+    }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="1200" height="420" fill="url(#bgGlow)" rx="16"/>
+  <rect width="1200" height="420" fill="url(#cyberGrid)" rx="16"/>
+
+  <!-- Scanning Line Effect -->
+  <g clip-path="url(#cardClip)">
+    <clipPath id="cardClip">
+      <rect width="1200" height="420" rx="16"/>
+    </clipPath>
+    <rect class="scanner" x="0" y="0" width="1200" height="80" fill="url(#scanGrad)"/>
+  </g>
+
+  <!-- Cybernetic Border & Corners -->
+  <rect x="2" y="2" width="1196" height="416" rx="14" fill="none" stroke="url(#borderGrad)" stroke-width="1.5"/>
+  
+  <!-- Outer Corner Accents -->
+  <path d="M 20 4 L 4 4 L 4 20" fill="none" stroke="#00f3ff" stroke-width="3"/>
+  <path d="M 1180 4 L 1196 4 L 1196 20" fill="none" stroke="#00f3ff" stroke-width="3"/>
+  <path d="M 4 400 L 4 416 L 20 416" fill="none" stroke="#ff007a" stroke-width="3"/>
+  <path d="M 1196 400 L 1196 416 L 1180 416" fill="none" stroke="#7928ca" stroke-width="3"/>
+
+  <!-- Top System Header Bar -->
+  <g class="mono" font-size="11" fill="#00f3ff" letter-spacing="1">
+    <rect x="30" y="20" width="8" height="8" fill="#00f3ff" class="blinker"/>
+    <text x="46" y="28" fill="#80deea" font-weight="600">SYS_AUTH // CLASSIFIED AI RESEARCH LAB</text>
+    <text x="600" y="28" text-anchor="middle" fill="#64748b">LEVEL-05 NEURAL ARCHITECTURE</text>
+    <text x="1170" y="28" text-anchor="end" fill="#00f3ff">SEC_ENCRYPT: <tspan fill="#39ff14">ONLINE ●</tspan></text>
+    <line x1="30" y1="38" x2="1170" y2="38" stroke="#00f3ff" stroke-opacity="0.25" stroke-width="1"/>
+  </g>
+
+  <!-- Neural Mesh Circuit Background Lines -->
+  <g opacity="0.6">
+    <!-- Network Bus Lines -->
+    <path d="M 100 210 L 420 210 L 520 210" stroke="#00f3ff" stroke-width="1.5" stroke-opacity="0.4"/>
+    <path d="M 680 210 L 780 210 L 1100 210" stroke="#00f3ff" stroke-width="1.5" stroke-opacity="0.4"/>
+    
+    <path class="flow-line" d="M 120 130 L 340 130 L 480 180 L 540 210" fill="none" stroke="#00f3ff" stroke-width="1.5"/>
+    <path class="flow-line-rev" d="M 120 290 L 340 290 L 480 240 L 540 210" fill="none" stroke="#9d4edd" stroke-width="1.5"/>
+    <path class="flow-line" d="M 660 210 L 720 180 L 860 130 L 1080 130" fill="none" stroke="#00f3ff" stroke-width="1.5"/>
+    <path class="flow-line-rev" d="M 660 210 L 720 240 L 860 290 L 1080 290" fill="none" stroke="#ff007a" stroke-width="1.5"/>
+  </g>
+
+  <!-- Floating Synaptic Particles -->
+  <g fill="#00f3ff">
+    <circle class="p-float1" cx="220" cy="110" r="2.5" opacity="0.8" filter="url(#glow)"/>
+    <circle class="p-float2" cx="310" cy="330" r="2" opacity="0.6"/>
+    <circle class="p-float3" cx="900" cy="110" r="3" opacity="0.7" fill="#ff007a" filter="url(#glow)"/>
+    <circle class="p-float1" cx="980" cy="320" r="2.5" opacity="0.8" fill="#9d4edd"/>
+    <circle class="p-float2" cx="160" cy="210" r="3" opacity="0.9" filter="url(#glow)"/>
+    <circle class="p-float3" cx="1040" cy="210" r="3" opacity="0.9" fill="#00f3ff" filter="url(#glow)"/>
+  </g>
+
+  <!-- Center AI Neural Core Sphere -->
+  <g>
+    <!-- Giant Backdrop Glow -->
+    <circle class="pulse-core" cx="600" cy="210" r="160" fill="url(#coreGlow)"/>
+
+    <!-- Concentric Rotating Tech Rings -->
+    <circle class="spin-ring" cx="600" cy="210" r="125" fill="none" stroke="#00f3ff" stroke-width="1.5" stroke-dasharray="16 28 8 20" opacity="0.5"/>
+    <circle class="spin-ring-rev" cx="600" cy="210" r="105" fill="none" stroke="#9d4edd" stroke-width="1.5" stroke-dasharray="30 15 10 15" opacity="0.6"/>
+    <circle class="spin-ring" cx="600" cy="210" r="85" fill="none" stroke="#00f3ff" stroke-width="1" stroke-dasharray="8 8" opacity="0.7"/>
+
+    <!-- Inner Core Orb -->
+    <circle cx="600" cy="210" r="65" fill="#030712" stroke="#00f3ff" stroke-width="2" filter="url(#intenseGlow)"/>
+    <circle cx="600" cy="210" r="45" fill="url(#cyberCyanPurple)" opacity="0.3" class="pulse-core"/>
+
+    <!-- Synaptic Nodes on Core -->
+    <circle cx="600" cy="145" r="4" fill="#00f3ff" filter="url(#glow)"/>
+    <circle cx="600" cy="275" r="4" fill="#ff007a" filter="url(#glow)"/>
+    <circle cx="535" cy="210" r="4" fill="#9d4edd" filter="url(#glow)"/>
+    <circle cx="665" cy="210" r="4" fill="#00f3ff" filter="url(#glow)"/>
+  </g>
+
+  <!-- Left Side Data Readout HUD -->
+  <g class="mono" font-size="10" fill="#64748b" transform="translate(60, 150)">
+    <text y="0" fill="#00f3ff" font-weight="700">▶ SYSTEM_DIAGNOSTICS</text>
+    <text y="20">NEURAL_LOAD: <tspan fill="#38bdf8">98.4% OPTIMAL</tspan></text>
+    <text y="38">TENSOR_CORES: <tspan fill="#a855f7">16,384 ACTIVE</tspan></text>
+    <text y="56">LATENCY: <tspan fill="#39ff14">0.14 ms</tspan></text>
+    <text y="74">COORDINATES: <tspan fill="#e2e8f0">21.0075° N, 105.8431° E</tspan></text>
+    <text y="92">BASE_ORBIT: <tspan fill="#e2e8f0">HUST // HANOI, VN</tspan></text>
+    <path d="M-10 -10 L -10 105 L 180 105" fill="none" stroke="#00f3ff" stroke-opacity="0.3" stroke-width="1"/>
+  </g>
+
+  <!-- Right Side Telemetry HUD -->
+  <g class="mono" font-size="10" fill="#64748b" transform="translate(970, 150)">
+    <text y="0" fill="#ff007a" font-weight="700">▶ NEURAL_STATE</text>
+    <text y="20">DATA_PIPELINE: <tspan fill="#39ff14">SYNCHRONIZED</tspan></text>
+    <text y="38">CV_ENGINE: <tspan fill="#38bdf8">YOLOv11 / TRACKING</tspan></text>
+    <text y="56">ML_STACK: <tspan fill="#a855f7">PYTORCH // SKLEARN</tspan></text>
+    <text y="74">STATUS: <tspan fill="#39ff14">AUTONOMOUS RESEARCH</tspan></text>
+    <text y="92">SECURITY: <tspan fill="#00f3ff">LEVEL_05 CLASSIFIED</tspan></text>
+    <path d="M210 -10 L 210 105 L 20 105" fill="none" stroke="#ff007a" stroke-opacity="0.3" stroke-width="1"/>
+  </g>
+
+  <!-- Main Hero Brand Typography (Center Prominent) -->
+  <g text-anchor="middle">
+    <!-- Subtitle Badge -->
+    <rect x="420" y="100" width="360" height="24" rx="12" fill="#0d1b2a" stroke="#00f3ff" stroke-opacity="0.4" stroke-width="1"/>
+    <text class="subtitle-text" x="600" y="116" font-size="10" fill="#00f3ff" font-weight="700">
+      ⚡ AI COMMAND CENTER // ARCHITECT
+    </text>
+
+    <!-- Main Name Header: VIRAKSAK KOY -->
+    <text class="title-text" x="600" y="215" font-size="52" fill="url(#chromeText)" filter="url(#glow)">
+      VIRAKSAK KOY
+    </text>
+
+    <!-- Target Title / Focus Sub-header -->
+    <text class="mono" x="600" y="250" font-size="13" fill="#00f3ff" letter-spacing="3" font-weight="600">
+      DATA SCIENCE &amp; ARTIFICIAL INTELLIGENCE RESEARCHER
+    </text>
+    <text class="mono" x="600" y="272" font-size="11" fill="#94a3b8" letter-spacing="2">
+      HANOI UNIVERSITY OF SCIENCE AND TECHNOLOGY // K69
+    </text>
+  </g>
+
+  <!-- Bottom Interactive Status Bar -->
+  <g transform="translate(0, 365)">
+    <rect x="30" y="0" width="1140" height="34" rx="6" fill="#060c18" stroke="#00f3ff" stroke-opacity="0.25" stroke-width="1"/>
+    
+    <g class="mono" font-size="11" fill="#e2e8f0">
+      <!-- Section 1 -->
+      <circle cx="55" cy="17" r="4" fill="#39ff14" class="blinker"/>
+      <text x="68" y="21" fill="#38bdf8" font-weight="600">CORE STATUS:</text>
+      <text x="160" y="21" fill="#e2e8f0">ONLINE // SYSTEM OPERATIONAL</text>
+
+      <line x1="390" y1="6" x2="390" y2="28" stroke="#00f3ff" stroke-opacity="0.2"/>
+
+      <!-- Section 2 -->
+      <text x="415" y="21" fill="#a855f7" font-weight="600">OPERATING MODE:</text>
+      <text x="545" y="21" fill="#f8fafc">BUILDING // LEARNING // RESEARCH</text>
+
+      <line x1="820" y1="6" x2="820" y2="28" stroke="#00f3ff" stroke-opacity="0.2"/>
+
+      <!-- Section 3 -->
+      <text x="845" y="21" fill="#ff007a" font-weight="600">MISSION:</text>
+      <text x="915" y="21" fill="#f8fafc">BUILD INTELLIGENT SYSTEMS</text>
+      <text x="1140" y="21" text-anchor="end" fill="#00f3ff" font-weight="700">v4.0_SYNAPSE</text>
+    </g>
+  </g>
+</svg>

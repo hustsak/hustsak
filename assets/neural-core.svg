@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%">
+  <defs>
+    <!-- Dark Tech Radial BG -->
+    <radialGradient id="coreBg" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#0a1128"/>
+      <stop offset="60%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#010206"/>
+    </radialGradient>
+
+    <!-- Synapse Aura -->
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#8b5cf6" stop-opacity="0.4"/>
+      <stop offset="70%" stop-color="#ec4899" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Linear Synapse Gradients -->
+    <linearGradient id="layerGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="layerGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+
+    <linearGradient id="layerGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#00f3ff"/>
+    </linearGradient>
+
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="packetGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="matrixGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseNode {
+      0%, 100% { transform: scale(1); opacity: 0.8; }
+      50% { transform: scale(1.3); opacity: 1; }
+    }
+    @keyframes pulseCoreHub {
+      0%, 100% { transform: scale(0.95); opacity: 0.7; }
+      50% { transform: scale(1.15); opacity: 1; }
+    }
+    @keyframes spinWheel {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes spinWheelRev {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes streamFast {
+      0% { stroke-dashoffset: 160; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes streamFastRev {
+      0% { stroke-dashoffset: -160; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes blinkText {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .node-p {
+      animation: pulseNode 3s ease-in-out infinite;
+    }
+    .node-hub {
+      transform-origin: 400px 180px;
+      animation: pulseCoreHub 3.5s ease-in-out infinite;
+    }
+    .hud-spin {
+      transform-origin: 400px 180px;
+      animation: spinWheel 22s linear infinite;
+    }
+    .hud-spin-rev {
+      transform-origin: 400px 180px;
+      animation: spinWheelRev 16s linear infinite;
+    }
+    .synapse-stream1 {
+      stroke-dasharray: 6, 12;
+      animation: streamFast 2s linear infinite;
+    }
+    .synapse-stream2 {
+      stroke-dasharray: 8, 16;
+      animation: streamFastRev 2.8s linear infinite;
+    }
+    .blink-status {
+      animation: blinkText 1.6s ease-in-out infinite;
+    }
+    .code-font {
+      font-family: 'JetBrains Mono', 'Fira Code', monospace;
+    }
+  </style>
+
+  <!-- Frame Background -->
+  <rect width="800" height="360" fill="url(#coreBg)" rx="14"/>
+  <rect width="800" height="360" fill="url(#matrixGrid)" rx="14"/>
+  <rect x="2" y="2" width="796" height="356" rx="12" fill="none" stroke="#00f3ff" stroke-opacity="0.3" stroke-width="1.5"/>
+
+  <!-- HUD Corner Brackets -->
+  <path d="M 15 5 L 5 5 L 5 15" stroke="#00f3ff" stroke-width="2.5" fill="none"/>
+  <path d="M 785 5 L 795 5 L 795 15" stroke="#00f3ff" stroke-width="2.5" fill="none"/>
+  <path d="M 5 345 L 5 355 L 15 355" stroke="#a855f7" stroke-width="2.5" fill="none"/>
+  <path d="M 795 345 L 795 355 L 785 355" stroke="#a855f7" stroke-width="2.5" fill="none"/>
+
+  <!-- Top Status Banner -->
+  <g class="code-font" font-size="10" letter-spacing="1">
+    <text x="25" y="25" fill="#00f3ff" font-weight="700">▶ NEURAL_CORE // TENSOR PIPELINE</text>
+    <text x="400" y="25" text-anchor="middle" fill="#64748b">GRAPH: 12-LAYER DEEP CONV-TRANSFORMER</text>
+    <text x="775" y="25" text-anchor="end" fill="#39ff14" class="blink-status">● SYNCHRONIZED</text>
+    <line x1="25" y1="34" x2="775" y2="34" stroke="#00f3ff" stroke-opacity="0.2" stroke-width="1"/>
+  </g>
+
+  <!-- Central Aura & HUD Rings -->
+  <circle class="node-hub" cx="400" cy="180" r="130" fill="url(#auraGlow)"/>
+  <circle class="hud-spin" cx="400" cy="180" r="95" fill="none" stroke="#00f3ff" stroke-width="1" stroke-dasharray="14 20 6 12" stroke-opacity="0.6"/>
+  <circle class="hud-spin-rev" cx="400" cy="180" r="75" fill="none" stroke="#a855f7" stroke-width="1.2" stroke-dasharray="25 15 8 10" stroke-opacity="0.5"/>
+  <circle cx="400" cy="180" r="55" fill="none" stroke="#00f3ff" stroke-width="1" stroke-dasharray="4 6" stroke-opacity="0.7"/>
+
+  <!-- Deep Neural Network Architecture -->
+  <!-- Layer 0: Input Features (X = 140) -->
+  <!-- Layer 1: Encoder / Latent (X = 270) -->
+  <!-- Layer 2: Central Attention Node (X = 400) -->
+  <!-- Layer 3: Decoder / Transformer (X = 530) -->
+  <!-- Layer 4: Prediction Heads (X = 660) -->
+
+  <!-- Network Interconnection Synapse Lines -->
+  <g opacity="0.75">
+    <!-- Input to Encoder -->
+    <path class="synapse-stream1" d="M 140 90 L 270 120" stroke="url(#layerGrad1)" stroke-width="1.2"/>
+    <path d="M 140 90 L 270 180" stroke="#00f3ff" stroke-opacity="0.2" stroke-width="1"/>
+    <path class="synapse-stream2" d="M 140 150 L 270 120" stroke="url(#layerGrad1)" stroke-width="1.2"/>
+    <path class="synapse-stream1" d="M 140 150 L 270 180" stroke="url(#layerGrad1)" stroke-width="1.5"/>
+    <path d="M 140 150 L 270 240" stroke="#00f3ff" stroke-opacity="0.2" stroke-width="1"/>
+    <path class="synapse-stream2" d="M 140 210 L 270 180" stroke="url(#layerGrad1)" stroke-width="1.2"/>
+    <path class="synapse-stream1" d="M 140 210 L 270 240" stroke="url(#layerGrad1)" stroke-width="1.2"/>
+    <path d="M 140 270 L 270 240" stroke="#00f3ff" stroke-opacity="0.25" stroke-width="1"/>
+
+    <!-- Encoder to Center Core -->
+    <path class="synapse-stream1" d="M 270 120 L 400 180" stroke="url(#layerGrad2)" stroke-width="2"/>
+    <path class="synapse-stream2" d="M 270 180 L 400 180" stroke="url(#layerGrad2)" stroke-width="2.5"/>
+    <path class="synapse-stream1" d="M 270 240 L 400 180" stroke="url(#layerGrad2)" stroke-width="2"/>
+
+    <!-- Center Core to Decoder -->
+    <path class="synapse-stream2" d="M 400 180 L 530 120" stroke="url(#layerGrad3)" stroke-width="2"/>
+    <path class="synapse-stream1" d="M 400 180 L 530 180" stroke="url(#layerGrad3)" stroke-width="2.5"/>
+    <path class="synapse-stream2" d="M 400 180 L 530 240" stroke="url(#layerGrad3)" stroke-width="2"/>
+
+    <!-- Decoder to Output Heads -->
+    <path class="synapse-stream1" d="M 530 120 L 660 110" stroke="url(#layerGrad1)" stroke-width="1.5"/>
+    <path d="M 530 120 L 660 180" stroke="#00f3ff" stroke-opacity="0.2" stroke-width="1"/>
+    <path class="synapse-stream2" d="M 530 180 L 660 110" stroke="url(#layerGrad1)" stroke-width="1.2"/>
+    <path class="synapse-stream1" d="M 530 180 L 660 180" stroke="url(#layerGrad1)" stroke-width="1.5"/>
+    <path class="synapse-stream2" d="M 530 180 L 660 250" stroke="url(#layerGrad1)" stroke-width="1.2"/>
+    <path d="M 530 240 L 660 180" stroke="#00f3ff" stroke-opacity="0.2" stroke-width="1"/>
+    <path class="synapse-stream1" d="M 530 240 L 660 250" stroke="url(#layerGrad1)" stroke-width="1.5"/>
+  </g>
+
+  <!-- Synaptic Nodes -->
+  <!-- Layer 0 Nodes -->
+  <g fill="#00f3ff" filter="url(#nodeGlow)">
+    <circle cx="140" cy="90" r="5" class="node-p"/>
+    <circle cx="140" cy="150" r="5" class="node-p"/>
+    <circle cx="140" cy="210" r="5" class="node-p"/>
+    <circle cx="140" cy="270" r="5" class="node-p"/>
+  </g>
+
+  <!-- Layer 1 Nodes -->
+  <g fill="#38bdf8" filter="url(#nodeGlow)">
+    <circle cx="270" cy="120" r="6" class="node-p"/>
+    <circle cx="270" cy="180" r="6" class="node-p"/>
+    <circle cx="270" cy="240" r="6" class="node-p"/>
+  </g>
+
+  <!-- Center Core Master Node -->
+  <circle cx="400" cy="180" r="32" fill="#030712" stroke="#00f3ff" stroke-width="2.5" filter="url(#packetGlow)"/>
+  <circle cx="400" cy="180" r="22" fill="#00f3ff" fill-opacity="0.25" class="node-hub"/>
+  <circle cx="400" cy="180" r="8" fill="#ffffff" filter="url(#nodeGlow)"/>
+
+  <!-- Layer 3 Nodes -->
+  <g fill="#a855f7" filter="url(#nodeGlow)">
+    <circle cx="530" cy="120" r="6" class="node-p"/>
+    <circle cx="530" cy="180" r="6" class="node-p"/>
+    <circle cx="530" cy="240" r="6" class="node-p"/>
+  </g>
+
+  <!-- Layer 4 Prediction Nodes -->
+  <g fill="#00f3ff" filter="url(#nodeGlow)">
+    <circle cx="660" cy="110" r="5.5" class="node-p"/>
+    <circle cx="660" cy="180" r="6" fill="#39ff14" class="node-p"/>
+    <circle cx="660" cy="250" r="5.5" class="node-p"/>
+  </g>
+
+  <!-- Architecture Sub-labels -->
+  <g class="code-font" font-size="9" fill="#94a3b8" text-anchor="middle">
+    <text x="140" y="305">INPUT_LAYER</text>
+    <text x="270" y="305">LATENT_ENCODER</text>
+    <text x="400" y="305" fill="#00f3ff" font-weight="700">ATTENTION_CORE</text>
+    <text x="530" y="305">DECODER_BLOCK</text>
+    <text x="660" y="305" fill="#39ff14">PREDICTION_HEADS</text>
+  </g>
+
+  <!-- Bottom HUD Metrics -->
+  <g class="code-font" font-size="9" fill="#64748b" transform="translate(40, 335)">
+    <text x="0" y="0">EPOCH: <tspan fill="#38bdf8">1,024/1,024</tspan></text>
+    <text x="140" y="0">LOSS: <tspan fill="#39ff14">0.00182</tspan></text>
+    <text x="260" y="0">VAL_ACC: <tspan fill="#39ff14">99.42%</tspan></text>
+    <text x="400" y="0">WEIGHTS: <tspan fill="#a855f7">FP16 OPTIMIZED</tspan></text>
+    <text x="560" y="0">INFERENCE: <tspan fill="#00f3ff">REAL-TIME 120 FPS</tspan></text>
+  </g>
+</svg>

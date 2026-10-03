@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="radarBg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#071322"/>
+      <stop offset="60%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#010204"/>
+    </radialGradient>
+
+    <!-- Radar Sweep Conic Gradient -->
+    <!-- Using a rotated gradient mask for smooth sweep beam -->
+    <linearGradient id="sweepBeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.8"/>
+      <stop offset="40%" stop-color="#00f3ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00f3ff" stop-opacity="0"/>
+    </linearGradient>
+
+    <radialGradient id="targetPulse" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff007a" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#ff007a" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ff007a" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="radarGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="radarGridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes radarSpin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes targetBlip {
+      0%, 100% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.6); opacity: 0.3; }
+    }
+    @keyframes pingWave {
+      0% { r: 6px; opacity: 1; stroke-width: 2px; }
+      100% { r: 38px; opacity: 0; stroke-width: 0.5px; }
+    }
+    @keyframes blinkLive {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+    @keyframes lineScanHorizontal {
+      0% { transform: translateY(0px); }
+      100% { transform: translateY(220px); }
+    }
+
+    .radar-sweep-arm {
+      transform-origin: 220px 180px;
+      animation: radarSpin 5s linear infinite;
+    }
+    .blip-pulse {
+      transform-origin: 260px 145px;
+      animation: targetBlip 2.2s ease-in-out infinite;
+    }
+    .ping-circle {
+      animation: pingWave 2.2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+    }
+    .live-dot {
+      animation: blinkLive 1.2s ease-in-out infinite;
+    }
+    .font-hud {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    }
+  </style>
+
+  <!-- Frame Background -->
+  <rect width="850" height="360" fill="url(#radarBg)" rx="14"/>
+  <rect width="850" height="360" fill="url(#radarGridPattern)" rx="14"/>
+  <rect x="2" y="2" width="846" height="356" rx="12" fill="none" stroke="#00f3ff" stroke-opacity="0.35" stroke-width="1.5"/>
+
+  <!-- Outer HUD Corner Marks -->
+  <path d="M 16 6 L 6 6 L 6 16" stroke="#00f3ff" stroke-width="2.5" fill="none"/>
+  <path d="M 834 6 L 844 6 L 844 16" stroke="#00f3ff" stroke-width="2.5" fill="none"/>
+  <path d="M 6 344 L 6 354 L 16 354" stroke="#ff007a" stroke-width="2.5" fill="none"/>
+  <path d="M 844 344 L 844 354 L 834 354" stroke="#00f3ff" stroke-width="2.5" fill="none"/>
+
+  <!-- Top Intelligence Bar -->
+  <g class="font-hud" font-size="10" letter-spacing="1">
+    <text x="30" y="26" fill="#00f3ff" font-weight="700">▶ GEO-ORBITAL INTELLIGENCE // RECON_HUD</text>
+    <text x="450" y="26" fill="#64748b">SAT_ID: HUST-SYNAPSE-01</text>
+    <text x="820" y="26" text-anchor="end" fill="#39ff14"><tspan class="live-dot">●</tspan> LIVE TELEMETRY</text>
+    <line x1="30" y1="36" x2="820" y2="36" stroke="#00f3ff" stroke-opacity="0.25" stroke-width="1"/>
+  </g>
+
+  <!-- LEFT: RADAR SCOPE (Center at X=220, Y=180) -->
+  <g id="radarStation">
+    <!-- Concentric Range Rings -->
+    <circle cx="220" cy="180" r="130" fill="none" stroke="#00f3ff" stroke-width="1" stroke-opacity="0.3"/>
+    <circle cx="220" cy="180" r="95" fill="none" stroke="#00f3ff" stroke-width="1" stroke-opacity="0.25" stroke-dasharray="4 4"/>
+    <circle cx="220" cy="180" r="60" fill="none" stroke="#00f3ff" stroke-width="1" stroke-opacity="0.35"/>
+    <circle cx="220" cy="180" r="25" fill="none" stroke="#00f3ff" stroke-width="1" stroke-opacity="0.5"/>
+    
+    <!-- Crosshairs -->
+    <line x1="90" y1="180" x2="350" y2="180" stroke="#00f3ff" stroke-width="1" stroke-opacity="0.35"/>
+    <line x1="220" y1="50" x2="220" y2="310" stroke="#00f3ff" stroke-width="1" stroke-opacity="0.35"/>
+
+    <!-- Degrees Azimuth Ticks -->
+    <text class="font-hud" x="220" y="44" font-size="8" fill="#64748b" text-anchor="middle">000° N</text>
+    <text class="font-hud" x="358" y="183" font-size="8" fill="#64748b">090° E</text>
+    <text class="font-hud" x="220" y="324" font-size="8" fill="#64748b" text-anchor="middle">180° S</text>
+    <text class="font-hud" x="82" y="183" font-size="8" fill="#64748b" text-anchor="end">270° W</text>
+
+    <!-- Radar Sweep Beam Sector -->
+    <g class="radar-sweep-arm">
+      <!-- Sweep Wedge -->
+      <path d="M 220 180 L 350 180 A 130 130 0 0 0 312 88 Z" fill="url(#sweepBeam)" opacity="0.6"/>
+      <line x1="220" y1="180" x2="350" y2="180" stroke="#00f3ff" stroke-width="2" filter="url(#radarGlow)"/>
+    </g>
+
+    <!-- Radar Center Dot -->
+    <circle cx="220" cy="180" r="3" fill="#00f3ff" filter="url(#radarGlow)"/>
+
+    <!-- Target Blip 1: HUST Primary Base (approx X=260, Y=145) -->
+    <g transform="translate(0, 0)">
+      <!-- Target Expanding Wave -->
+      <circle cx="260" cy="145" class="ping-circle" fill="none" stroke="#ff007a"/>
+      <!-- Target Core Blip -->
+      <circle class="blip-pulse" cx="260" cy="145" r="4.5" fill="#ff007a" filter="url(#radarGlow)"/>
+      <circle cx="260" cy="145" r="2" fill="#ffffff"/>
+      <!-- Target Callout Tag -->
+      <line x1="264" y1="141" x2="285" y2="120" stroke="#ff007a" stroke-width="1"/>
+      <line x1="285" y1="120" x2="330" y2="120" stroke="#ff007a" stroke-width="1"/>
+      <text class="font-hud" x="290" y="115" font-size="8" fill="#ff007a" font-weight="700">TARGET: HUST</text>
+    </g>
+
+    <!-- Target Blip 2: Secondary Node -->
+    <circle cx="165" cy="225" r="3" fill="#00f3ff" opacity="0.85" filter="url(#radarGlow)"/>
+    <circle cx="165" cy="225" class="ping-circle" fill="none" stroke="#00f3ff" opacity="0.5"/>
+  </g>
+
+  <!-- Vertical Divider Separator -->
+  <line x1="390" y1="50" x2="390" y2="330" stroke="#00f3ff" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- RIGHT: SATELLITE TELEMETRY CONSOLE -->
+  <g transform="translate(420, 60)">
+    <!-- Main Location Title Banner -->
+    <rect x="0" y="0" width="395" height="48" rx="6" fill="#0d1b2a" stroke="#00f3ff" stroke-opacity="0.3" stroke-width="1"/>
+    
+    <g class="font-hud">
+      <text x="16" y="20" font-size="10" fill="#00f3ff" font-weight="700">STATION LOCATION // APEX BASE</text>
+      <text x="16" y="38" font-size="14" fill="#ffffff" font-weight="800" letter-spacing="1">HANOI UNIVERSITY OF SCIENCE AND TECHNOLOGY</text>
+    </g>
+
+    <!-- Telemetry Data Grid -->
+    <g class="font-hud" font-size="10" transform="translate(0, 65)">
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="190" height="38" rx="4" fill="#080e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="12" y="16" fill="#64748b" font-size="8">SATELLITE SECTOR</text>
+      <text x="12" y="30" fill="#38bdf8" font-weight="700">HUST // HANOI, VN</text>
+
+      <rect x="205" y="0" width="190" height="38" rx="4" fill="#080e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="217" y="16" fill="#64748b" font-size="8">ORBITAL BEACON</text>
+      <text x="217" y="30" fill="#39ff14" font-weight="700">● SIGNAL: ONLINE</text>
+
+      <!-- Row 2 -->
+      <rect x="0" y="48" width="190" height="38" rx="4" fill="#080e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="12" y="64" fill="#64748b" font-size="8">LATITUDE COORDINATE</text>
+      <text x="12" y="78" fill="#e2e8f0" font-weight="700">21.0075° N</text>
+
+      <rect x="205" y="48" width="190" height="38" rx="4" fill="#080e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="217" y="64" fill="#64748b" font-size="8">LONGITUDE COORDINATE</text>
+      <text x="217" y="78" fill="#e2e8f0" font-weight="700">105.8431° E</text>
+
+      <!-- Row 3 -->
+      <rect x="0" y="96" width="190" height="38" rx="4" fill="#080e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="12" y="112" fill="#64748b" font-size="8">OPERATOR ACADEMIC COHORT</text>
+      <text x="12" y="126" fill="#a855f7" font-weight="700">YEAR 3 // COHORT K69</text>
+
+      <rect x="205" y="96" width="190" height="38" rx="4" fill="#080e1a" stroke="#1e293b" stroke-width="1"/>
+      <text x="217" y="112" fill="#64748b" font-size="8">OPERATING MODE</text>
+      <text x="217" y="126" fill="#ff007a" font-weight="700">BUILD // LEARN // RESEARCH</text>
+    </g>
+
+    <!-- Bottom Terminal Command Stamp -->
+    <g class="font-hud" font-size="9" transform="translate(0, 218)">
+      <rect x="0" y="0" width="395" height="42" rx="4" fill="#030712" stroke="#00f3ff" stroke-opacity="0.2" stroke-width="1"/>
+      <text x="12" y="16" fill="#00f3ff">root@hust-orbital-sat:~$</text>
+      <text x="175" y="16" fill="#e2e8f0">ping -c 4 hust.edu.vn</text>
+      <text x="12" y="32" fill="#64748b">4 packets transmitted, 4 received, 0% loss, rtt avg 0.12ms</text>
+    </g>
+  </g>
+</svg>
