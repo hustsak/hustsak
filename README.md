@@ -6,7 +6,7 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/hero.svg">
   <source media="(prefers-color-scheme: light)" srcset="assets/hero.svg">
-  <img src="assets/hero.svg" alt="Viraksak KOY - AI & Data Science Neural Command Center" width="100%">
+  <img src="assets/hero.svg" alt="Viraksak KOY - AI & Data Science" width="100%">
 </picture>
 
 <br/><br/>
@@ -44,26 +44,11 @@
 <!-- ======================================================== -->
 <!-- 4. DIGITAL DNA                                           -->
 <!-- ======================================================== -->
-### 🧬 DIGITAL DNA // NEURAL SYNAPSE STACK
+### DNA
 
 <div align="center">
   <img src="assets/dna-helix.svg" alt="Digital DNA Helix Animation" width="100%">
 </div>
-
-
-```
-┌── PROGRAMMING LANGUAGES ────────────────────────────────────────────────────────────────────────┐
-│  Python ── Java ── C / C++ ── SQL ── HTML5 / CSS3                                              │
-└── AI & DEEP LEARNING ARCHITECTURES ─────────────────────────────────────────────────────────────┘
-│  Machine Learning ── Deep Learning ── Computer Vision ── Scikit-learn ── XGBoost ── YOLO         │
-└── DATA SCIENCE & ANALYTICAL PIPELINE ───────────────────────────────────────────────────────────┘
-│  Data Analysis ── Data Cleaning & EDA ── Pandas ── NumPy ── Data Visualization ── Statistics   │
-└── BACKEND & DISTRIBUTED WEB SYSTEMS ────────────────────────────────────────────────────────────┘
-│  FastAPI ── REST API ── PostgreSQL ── Next.js ── Tailwind CSS                                  │
-└── TACTICAL TOOLING & WORKSPACES ────────────────────────────────────────────────────────────────┘
-│  Tableau ── Microsoft Excel ── Git / GitHub ── VS Code ── Jupyter ── Google Colab ── Docker     │
-└─────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
 
 <div align="center">
 
@@ -83,7 +68,7 @@
 <img src="https://img.shields.io/badge/XGBoost-15B886?style=for-the-badge&logo=xgboost&logoColor=white" alt="XGBoost" />
 <img src="https://img.shields.io/badge/YOLO_Detection-00FFFF?style=for-the-badge&logo=target&logoColor=black" alt="YOLO" />
 
-#### 🔹 DATA SCIENCE / EDA & VISUALIZATION
+#### 🔹 DATA SCIENCE / EDA
 <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
 <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy" />
 <img src="https://img.shields.io/badge/Data_Cleaning_&_EDA-0284c7?style=for-the-badge&logo=google-analytics&logoColor=white" alt="Data Cleaning & EDA" />
@@ -115,7 +100,7 @@
 <!-- ======================================================== -->
 <!-- 5. CLASSIFIED AI RESEARCH LAB                            -->
 <!-- ======================================================== -->
-### 🔬 CLASSIFIED AI RESEARCH LAB // ACTIVE INITIATIVES
+### 🔬 CLASSIFIED AI RESEARCH LAB
 
 <div align="center">
   <img src="assets/neural-core.svg" alt="Classified AI Research Lab Architecture" width="100%">
@@ -124,7 +109,7 @@
 | DIRECTIVE | CLASSIFICATION | STATUS | RESEARCH FOCUS |
 | :--- | :--- | :--- | :--- |
 | **CURRENT RESEARCH** | LEVEL-05 | `RUNNING` 🟢 | **Machine Learning for Business Intelligence & Predictive Analytics** |
-| **ACTIVE EXPERIMENT** | LEVEL-04 | `PROCESSING` 🔵 | **Computer Vision — Object Detection & Multi-Object Tracking** |
+| **ACTIVE EXPERIMENT** | LEVEL-04 | `PROCESSING`🔵 | **Computer Vision — Object Detection & Multi-Object Tracking** |
 | **SPECIALIZATION I** | TACTICAL | `ENGAGED` 🟣 | **Machine Learning & Predictive Analytics Engine Architecture** |
 | **SPECIALIZATION II** | STRATEGIC | `ENGAGED` 🟣 | **Computer Vision & Intelligent Real-Time Surveillance Cameras** |
 | **SPECIALIZATION III** | FRONTIER | `ENGAGED` 🟣 | **Autonomous AI Agents & Multi-Modal Intelligent Systems** |
@@ -140,13 +125,12 @@
 <!-- ======================================================== -->
 <!-- 6. CURRENT ACADEMIC CURRICULUM & LEARNING                -->
 <!-- ======================================================== -->
-### 📚 CURRENT LEARNING // LEVEL-05 CURRICULUM
+### 📚 CURRENT LEARNING
 
 ```
 ┌── [ACADEMIC SPRINT] ─────────────────────────────────────────────────────────────────┐
 │                                                                                      │
-│  [01] ⚡ ADVANCED DATA ANALYTICS & PROFESSIONAL PRACTICE                             │
-│       High-dimensional statistical modeling, enterprise decision intelligence        │
+│  [01] ⚡ ADVANCED DATA ANALYTICS & PROFESSIONAL AT GOOGLE COURSERA                             
 │                                                                                      │
 │  [02] 🛡️ INFORMATION SECURITY                                                        │
 │       Cryptographic protocols, system defense, neural model & pipeline security      │
@@ -165,7 +149,7 @@
 <!-- ======================================================== -->
 <!-- 7. SYSTEM TELEMETRY / SKILLS METRICS                     -->
 <!-- ======================================================== -->
-### ⚡ SYSTEM TELEMETRY // COGNITIVE MATRIX
+### ⚡ SYSTEM TELEMETRY
 
 <div align="center">
 
@@ -177,7 +161,7 @@ NEURAL CORE READOUT:
 │ Machine Learning & Predictive Modeling        │ [██████████████████████████████░░░░] 88%     │
 │ Computer Vision & Deep Learning               │ [████████████████████████████░░░░░░] 84%     │
 │ Data Engineering, Cleaning & Exploratory EDA  │ [████████████████████████████████░░] 92%     │
-│ Statistical Inference & Business Analytics   │ [██████████████████████████████░░░░] 86%     │
+│ Statistical Inference & Business Analytics    │ [██████████████████████████████░░░░] 86%     │
 │ Backend API Microservices (FastAPI / SQL)     │ [████████████████████████████░░░░░░] 82%     │
 │ Full-Stack Interface Engineering              │ [████████████████████████░░░░░░░░░░] 78%     │
 └───────────────────────────────────────────────┴───────────────────────────────────────────────┘
@@ -193,7 +177,7 @@ NEURAL CORE READOUT:
 <!-- ======================================================== -->
 <!-- 8. CHROME AURA                                           -->
 <!-- ======================================================== -->
-### 🔮 IDENTITY TRANSFORMATION // CHROME AURA
+### 🔮ABOUT ME!
 
 <div align="center">
   <img src="assets/chrome-aura.svg" alt="Viraksak KOY Chrome Aura Identity" width="100%">
@@ -204,7 +188,7 @@ NEURAL CORE READOUT:
 <!-- ======================================================== -->
 <!-- 9. TERMINAL / CONTACT                                    -->
 <!-- ======================================================== -->
-### 🖥️ NEURAL TERMINAL // COMMS FREQUENCY
+### 🖥️ NEURAL TERMINAL
 
 ```bash
 root@hust-classified-lab:~$ sys_handshake --operator "VIRAKSAK KOY" --mode ACTIVE
