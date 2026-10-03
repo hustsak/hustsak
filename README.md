@@ -42,31 +42,14 @@
 ---
 
 <!-- ======================================================== -->
-<!-- 4. SATELLITE INTELLIGENCE                                -->
-<!-- ======================================================== -->
-### 🛰️ SATELLITE INTELLIGENCE // ORBITAL TELEMETRY
-
-<div align="center">
-  <img src="assets/satellite-radar.svg" alt="Satellite Radar Recon Console" width="100%">
-</div>
-
-```yaml
-# [ORBITAL TELEMETRY SPECIFICATION]
-SECTOR: "HUST // HANOI, VIETNAM"
-COORDINATES: "21.0075° N, 105.8431° E"
-SATELLITE BEACON: "HUST // HANOI [ONLINE ●]"
-ACADEMIC REGISTRY: "Hanoi University of Science and Technology (Đại học Bách khoa Hà Nội)"
-COHORT: "Year 3 / K69 // Data Science"
-OPERATING MODE: "BUILDING // LEARNING // RESEARCH"
-SYSTEM CLASSIFICATION: "LEVEL-05 CLASSIFIED AI LAB"
-```
-
----
-
-<!-- ======================================================== -->
-<!-- 5. DIGITAL DNA                                           -->
+<!-- 4. DIGITAL DNA                                           -->
 <!-- ======================================================== -->
 ### 🧬 DIGITAL DNA // NEURAL SYNAPSE STACK
+
+<div align="center">
+  <img src="assets/dna-helix.svg" alt="Digital DNA Helix Animation" width="100%">
+</div>
+
 
 ```
 ┌── PROGRAMMING LANGUAGES ────────────────────────────────────────────────────────────────────────┐
@@ -129,7 +112,8 @@ SYSTEM CLASSIFICATION: "LEVEL-05 CLASSIFIED AI LAB"
 ---
 
 <!-- ======================================================== -->
-<!-- 6. CLASSIFIED AI RESEARCH LAB                            -->
+<!-- ======================================================== -->
+<!-- 5. CLASSIFIED AI RESEARCH LAB                            -->
 <!-- ======================================================== -->
 ### 🔬 CLASSIFIED AI RESEARCH LAB // ACTIVE INITIATIVES
 
@@ -154,7 +138,7 @@ SYSTEM CLASSIFICATION: "LEVEL-05 CLASSIFIED AI LAB"
 ---
 
 <!-- ======================================================== -->
-<!-- 7. CURRENT ACADEMIC CURRICULUM & LEARNING                -->
+<!-- 6. CURRENT ACADEMIC CURRICULUM & LEARNING                -->
 <!-- ======================================================== -->
 ### 📚 CURRENT LEARNING // LEVEL-05 CURRICULUM
 
@@ -179,7 +163,7 @@ SYSTEM CLASSIFICATION: "LEVEL-05 CLASSIFIED AI LAB"
 ---
 
 <!-- ======================================================== -->
-<!-- 8. SYSTEM TELEMETRY / SKILLS METRICS                     -->
+<!-- 7. SYSTEM TELEMETRY / SKILLS METRICS                     -->
 <!-- ======================================================== -->
 ### ⚡ SYSTEM TELEMETRY // COGNITIVE MATRIX
 
@@ -207,7 +191,7 @@ NEURAL CORE READOUT:
 ---
 
 <!-- ======================================================== -->
-<!-- 9. CHROME AURA                                           -->
+<!-- 8. CHROME AURA                                           -->
 <!-- ======================================================== -->
 ### 🔮 IDENTITY TRANSFORMATION // CHROME AURA
 
@@ -218,7 +202,7 @@ NEURAL CORE READOUT:
 ---
 
 <!-- ======================================================== -->
-<!-- 10. TERMINAL / CONTACT                                   -->
+<!-- 9. TERMINAL / CONTACT                                    -->
 <!-- ======================================================== -->
 ### 🖥️ NEURAL TERMINAL // COMMS FREQUENCY
 

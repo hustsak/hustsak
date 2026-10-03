@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 360" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="dnaBg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#081426"/>
+      <stop offset="60%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#010206"/>
+    </radialGradient>
+
+    <!-- Linear Strand Gradients -->
+    <linearGradient id="strandCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f3ff"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#00f3ff"/>
+    </linearGradient>
+
+    <linearGradient id="strandPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d946ef"/>
+      <stop offset="50%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ff007a"/>
+    </linearGradient>
+
+    <linearGradient id="rungGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f3ff" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <filter id="dnaGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <pattern id="dnaGrid" width="25" height="25" patternUnits="userSpaceOnUse">
+      <path d="M 25 0 L 0 0 0 25" fill="none" stroke="#00f3ff" stroke-width="0.5" stroke-opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes dnaRotate1 {
+      0%   { cy: 90px;  r: 6.5px; fill-opacity: 1; fill: #00f3ff; }
+      25%  { cy: 170px; r: 4px;   fill-opacity: 0.45; fill: #0284c7; }
+      50%  { cy: 250px; r: 3px;   fill-opacity: 0.3; fill: #1e3a8a; }
+      75%  { cy: 170px; r: 5px;   fill-opacity: 0.7; fill: #38bdf8; }
+      100% { cy: 90px;  r: 6.5px; fill-opacity: 1; fill: #00f3ff; }
+    }
+    @keyframes dnaRotate2 {
+      0%   { cy: 250px; r: 3px;   fill-opacity: 0.3; fill: #701a75; }
+      25%  { cy: 170px; r: 5px;   fill-opacity: 0.7; fill: #c084fc; }
+      50%  { cy: 90px;  r: 6.5px; fill-opacity: 1; fill: #ff007a; }
+      75%  { cy: 170px; r: 4px;   fill-opacity: 0.45; fill: #a21caf; }
+      100% { cy: 250px; r: 3px;   fill-opacity: 0.3; fill: #701a75; }
+    }
+    @keyframes rungOscillate {
+      0%   { y1: 90px;  y2: 250px; opacity: 0.85; stroke-width: 1.8px; }
+      25%  { y1: 170px; y2: 170px; opacity: 0.25; stroke-width: 0.8px; }
+      50%  { y1: 250px; y2: 90px;  opacity: 0.85; stroke-width: 1.8px; }
+      75%  { y1: 170px; y2: 170px; opacity: 0.25; stroke-width: 0.8px; }
+      100% { y1: 90px;  y2: 250px; opacity: 0.85; stroke-width: 1.8px; }
+    }
+    @keyframes blinkLed {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.2; }
+    }
+    @keyframes scanLine {
+      0% { transform: translateX(0px); }
+      100% { transform: translateX(900px); }
+    }
+
+    /* Staggered cycle animations for 16 DNA base pairs */
+    .r0  { animation: rungOscillate 3.2s ease-in-out infinite 0.0s; }
+    .n1-0{ animation: dnaRotate1   3.2s ease-in-out infinite 0.0s; }
+    .n2-0{ animation: dnaRotate2   3.2s ease-in-out infinite 0.0s; }
+
+    .r1  { animation: rungOscillate 3.2s ease-in-out infinite -0.2s; }
+    .n1-1{ animation: dnaRotate1   3.2s ease-in-out infinite -0.2s; }
+    .n2-1{ animation: dnaRotate2   3.2s ease-in-out infinite -0.2s; }
+
+    .r2  { animation: rungOscillate 3.2s ease-in-out infinite -0.4s; }
+    .n1-2{ animation: dnaRotate1   3.2s ease-in-out infinite -0.4s; }
+    .n2-2{ animation: dnaRotate2   3.2s ease-in-out infinite -0.4s; }
+
+    .r3  { animation: rungOscillate 3.2s ease-in-out infinite -0.6s; }
+    .n1-3{ animation: dnaRotate1   3.2s ease-in-out infinite -0.6s; }
+    .n2-3{ animation: dnaRotate2   3.2s ease-in-out infinite -0.6s; }
+
+    .r4  { animation: rungOscillate 3.2s ease-in-out infinite -0.8s; }
+    .n1-4{ animation: dnaRotate1   3.2s ease-in-out infinite -0.8s; }
+    .n2-4{ animation: dnaRotate2   3.2s ease-in-out infinite -0.8s; }
+
+    .r5  { animation: rungOscillate 3.2s ease-in-out infinite -1.0s; }
+    .n1-5{ animation: dnaRotate1   3.2s ease-in-out infinite -1.0s; }
+    .n2-5{ animation: dnaRotate2   3.2s ease-in-out infinite -1.0s; }
+
+    .r6  { animation: rungOscillate 3.2s ease-in-out infinite -1.2s; }
+    .n1-6{ animation: dnaRotate1   3.2s ease-in-out infinite -1.2s; }
+    .n2-6{ animation: dnaRotate2   3.2s ease-in-out infinite -1.2s; }
+
+    .r7  { animation: rungOscillate 3.2s ease-in-out infinite -1.4s; }
+    .n1-7{ animation: dnaRotate1   3.2s ease-in-out infinite -1.4s; }
+    .n2-7{ animation: dnaRotate2   3.2s ease-in-out infinite -1.4s; }
+
+    .r8  { animation: rungOscillate 3.2s ease-in-out infinite -1.6s; }
+    .n1-8{ animation: dnaRotate1   3.2s ease-in-out infinite -1.6s; }
+    .n2-8{ animation: dnaRotate2   3.2s ease-in-out infinite -1.6s; }
+
+    .r9  { animation: rungOscillate 3.2s ease-in-out infinite -1.8s; }
+    .n1-9{ animation: dnaRotate1   3.2s ease-in-out infinite -1.8s; }
+    .n2-9{ animation: dnaRotate2   3.2s ease-in-out infinite -1.8s; }
+
+    .r10 { animation: rungOscillate 3.2s ease-in-out infinite -2.0s; }
+    .n1-10{ animation: dnaRotate1  3.2s ease-in-out infinite -2.0s; }
+    .n2-10{ animation: dnaRotate2  3.2s ease-in-out infinite -2.0s; }
+
+    .r11 { animation: rungOscillate 3.2s ease-in-out infinite -2.2s; }
+    .n1-11{ animation: dnaRotate1  3.2s ease-in-out infinite -2.2s; }
+    .n2-11{ animation: dnaRotate2  3.2s ease-in-out infinite -2.2s; }
+
+    .r12 { animation: rungOscillate 3.2s ease-in-out infinite -2.4s; }
+    .n1-12{ animation: dnaRotate1  3.2s ease-in-out infinite -2.4s; }
+    .n2-12{ animation: dnaRotate2  3.2s ease-in-out infinite -2.4s; }
+
+    .r13 { animation: rungOscillate 3.2s ease-in-out infinite -2.6s; }
+    .n1-13{ animation: dnaRotate1  3.2s ease-in-out infinite -2.6s; }
+    .n2-13{ animation: dnaRotate2  3.2s ease-in-out infinite -2.6s; }
+
+    .r14 { animation: rungOscillate 3.2s ease-in-out infinite -2.8s; }
+    .n1-14{ animation: dnaRotate1  3.2s ease-in-out infinite -2.8s; }
+    .n2-14{ animation: dnaRotate2  3.2s ease-in-out infinite -2.8s; }
+
+    .r15 { animation: rungOscillate 3.2s ease-in-out infinite -3.0s; }
+    .n1-15{ animation: dnaRotate1  3.2s ease-in-out infinite -3.0s; }
+    .n2-15{ animation: dnaRotate2  3.2s ease-in-out infinite -3.0s; }
+
+    .font-hud {
+      font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    }
+  </style>
+
+  <!-- Canvas Frame -->
+  <rect width="900" height="360" fill="url(#dnaBg)" rx="14"/>
+  <rect width="900" height="360" fill="url(#dnaGrid)" rx="14"/>
+  <rect x="2" y="2" width="896" height="356" rx="12" fill="none" stroke="#00f3ff" stroke-opacity="0.35" stroke-width="1.5"/>
+
+  <!-- HUD Corner Accents -->
+  <path d="M 16 6 L 6 6 L 6 16" stroke="#00f3ff" stroke-width="2.5" fill="none"/>
+  <path d="M 884 6 L 894 6 L 894 16" stroke="#00f3ff" stroke-width="2.5" fill="none"/>
+  <path d="M 6 344 L 6 354 L 16 354" stroke="#ff007a" stroke-width="2.5" fill="none"/>
+  <path d="M 894 344 L 894 354 L 884 354" stroke="#a855f7" stroke-width="2.5" fill="none"/>
+
+  <!-- Top Title Bar -->
+  <g class="font-hud" font-size="10" letter-spacing="1">
+    <text x="30" y="26" fill="#00f3ff" font-weight="700">▶ DIGITAL_DNA // SYNAPTIC HELIX SEQUENCER</text>
+    <text x="450" y="26" text-anchor="middle" fill="#64748b">DOUBLE-HELIX CHROMATIN PIPELINE</text>
+    <text x="870" y="26" text-anchor="end" fill="#39ff14"><tspan style="animation: blinkLed 1.4s infinite">●</tspan> GENOME: SYNCHRONIZED</text>
+    <line x1="30" y1="36" x2="870" y2="36" stroke="#00f3ff" stroke-opacity="0.25" stroke-width="1"/>
+  </g>
+
+  <!-- Waveform Center Guide Line -->
+  <line x1="50" y1="170" x2="850" y2="170" stroke="#00f3ff" stroke-opacity="0.12" stroke-dasharray="3 3"/>
+
+  <!-- 3D ROTATING DNA DOUBLE HELIX -->
+  <!-- Rungs (Base pairs bridging the strands) -->
+  <g stroke="url(#rungGlow)" filter="url(#dnaGlow)">
+    <line class="r0"  x1="70"  x2="70"  y1="90" y2="250"/>
+    <line class="r1"  x1="120" x2="120" y1="90" y2="250"/>
+    <line class="r2"  x1="170" x2="170" y1="90" y2="250"/>
+    <line class="r3"  x1="220" x2="220" y1="90" y2="250"/>
+    <line class="r4"  x1="270" x2="270" y1="90" y2="250"/>
+    <line class="r5"  x1="320" x2="320" y1="90" y2="250"/>
+    <line class="r6"  x1="370" x2="370" y1="90" y2="250"/>
+    <line class="r7"  x1="420" x2="420" y1="90" y2="250"/>
+    <line class="r8"  x1="470" x2="470" y1="90" y2="250"/>
+    <line class="r9"  x1="520" x2="520" y1="90" y2="250"/>
+    <line class="r10" x1="570" x2="570" y1="90" y2="250"/>
+    <line class="r11" x1="620" x2="620" y1="90" y2="250"/>
+    <line class="r12" x1="670" x2="670" y1="90" y2="250"/>
+    <line class="r13" x1="720" x2="720" y1="90" y2="250"/>
+    <line class="r14" x1="770" x2="770" y1="90" y2="250"/>
+    <line class="r15" x1="820" x2="820" y1="90" y2="250"/>
+  </g>
+
+  <!-- Strand 1 (Cyan Lead Strand) Nodes -->
+  <g filter="url(#dnaGlow)">
+    <circle class="n1-0"  cx="70"  cy="90" r="6"/>
+    <circle class="n1-1"  cx="120" cy="90" r="6"/>
+    <circle class="n1-2"  cx="170" cy="90" r="6"/>
+    <circle class="n1-3"  cx="220" cy="90" r="6"/>
+    <circle class="n1-4"  cx="270" cy="90" r="6"/>
+    <circle class="n1-5"  cx="320" cy="90" r="6"/>
+    <circle class="n1-6"  cx="370" cy="90" r="6"/>
+    <circle class="n1-7"  cx="420" cy="90" r="6"/>
+    <circle class="n1-8"  cx="470" cy="90" r="6"/>
+    <circle class="n1-9"  cx="520" cy="90" r="6"/>
+    <circle class="n1-10" cx="570" cy="90" r="6"/>
+    <circle class="n1-11" cx="620" cy="90" r="6"/>
+    <circle class="n1-12" cx="670" cy="90" r="6"/>
+    <circle class="n1-13" cx="720" cy="90" r="6"/>
+    <circle class="n1-14" cx="770" cy="90" r="6"/>
+    <circle class="n1-15" cx="820" cy="90" r="6"/>
+  </g>
+
+  <!-- Strand 2 (Purple/Magenta Lagging Strand) Nodes -->
+  <g filter="url(#dnaGlow)">
+    <circle class="n2-0"  cx="70"  cy="250" r="4"/>
+    <circle class="n2-1"  cx="120" cy="250" r="4"/>
+    <circle class="n2-2"  cx="170" cy="250" r="4"/>
+    <circle class="n2-3"  cx="220" cy="250" r="4"/>
+    <circle class="n2-4"  cx="270" cy="250" r="4"/>
+    <circle class="n2-5"  cx="320" cy="250" r="4"/>
+    <circle class="n2-6"  cx="370" cy="250" r="4"/>
+    <circle class="n2-7"  cx="420" cy="250" r="4"/>
+    <circle class="n2-8"  cx="470" cy="250" r="4"/>
+    <circle class="n2-9"  cx="520" cy="250" r="4"/>
+    <circle class="n2-10" cx="570" cy="250" r="4"/>
+    <circle class="n2-11" cx="620" cy="250" r="4"/>
+    <circle class="n2-12" cx="670" cy="250" r="4"/>
+    <circle class="n2-13" cx="720" cy="250" r="4"/>
+    <circle class="n2-14" cx="770" cy="250" r="4"/>
+    <circle class="n2-15" cx="820" cy="250" r="4"/>
+  </g>
+
+  <!-- Base Annotations -->
+  <g class="font-hud" font-size="8" fill="#64748b" text-anchor="middle">
+    <text x="70"  y="280">A-T</text>
+    <text x="120" y="280">G-C</text>
+    <text x="170" y="280">T-A</text>
+    <text x="220" y="280">C-G</text>
+    <text x="270" y="280">PYTH</text>
+    <text x="320" y="280">TORCH</text>
+    <text x="370" y="280">YOLO</text>
+    <text x="420" y="280">SKLN</text>
+    <text x="470" y="280">DATA</text>
+    <text x="520" y="280">FAST</text>
+    <text x="570" y="280">NEXT</text>
+    <text x="620" y="280">PGSQL</text>
+    <text x="670" y="280">DOCKR</text>
+    <text x="720" y="280">G-C</text>
+    <text x="770" y="280">A-T</text>
+    <text x="820" y="280">C-G</text>
+  </g>
+
+  <!-- Bottom Telemetry HUD Bar -->
+  <g class="font-hud" font-size="9" transform="translate(30, 310)">
+    <rect x="0" y="0" width="840" height="34" rx="5" fill="#080e1a" stroke="#00f3ff" stroke-opacity="0.25" stroke-width="1"/>
+    
+    <text x="18" y="21" fill="#00f3ff" font-weight="700">HELIX RESOLUTION:</text>
+    <text x="145" y="21" fill="#e2e8f0">3.4Å / 10 BP CYCLE</text>
+
+    <text x="310" y="21" fill="#a855f7" font-weight="700">BASE PAIRS:</text>
+    <text x="395" y="21" fill="#e2e8f0">CORE ML &amp; DATA STACK</text>
+
+    <text x="590" y="21" fill="#ff007a" font-weight="700">MUTATION RATE:</text>
+    <text x="700" y="21" fill="#39ff14">0.00% (STABLE RUN)</text>
+  </g>
+</svg>
