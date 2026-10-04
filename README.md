@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/neural-pointcloud.png" width="100%" alt="AI Neural Point Cloud"/>
+<img src="./assets/page.png" width="100%" alt="AI Neural Point Cloud"/>
 
 <h1>VIRAKSAK KOY</h1>
 <h3>AI & Data Science Student</h3>
@@ -17,6 +17,12 @@ div align="center">
   <img src="assets/hero.svg" alt="Viraksak KOY - AI & Data Science" width="100%">
 </picture>
 
+<!-- ======================================================== -->
+<!-- 3. ANIMATED SYSTEM STATUS / TYPING                       -->
+<!-- ======================================================== -->
+<a href="https://github.com/hustsak">
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=2800&pause=1000&color=00F3FF&center=true&vCenter=true&multiline=false&width=780&height=40&lines=%E2%9A%A1+SYS_STATUS%3A+ONLINE+%7C%7C+OPERATING+MODE%3A+BUILDING+%2F%2F+LEARNING+%2F%2F+RESEARCH;%F0%9F%A7%A0+NEURAL+CORE%3A+DATA+SCIENCE+%26+ARTIFICIAL+INTELLIGENCE+RESEARCH;%F0%9F%9B%B0%EF%B8%8F+BASE%3A+HANOI+UNIVERSITY+OF+SCIENCE+AND+TECHNOLOGY+(HUST)+%2F%2F+K69;%F0%9F%94%AD+EXPERIMENT%3A+COMPUTER+VISION+%E2%80%94+OBJECT+DETECTION+%26+TRACKING;%F0%9F%92%BE+OPERATOR%3A+VIRAKSAK+KOY+%7C%7C+MISSION%3A+BUILD+INTELLIGENT+SYSTEMS" alt="System Status Console Typing" />
+</a>
 <br/><br/>
 
 <!-- ======================================================== -->
@@ -29,13 +35,6 @@ div align="center">
 </picture>
 
 <br/>
-
-<!-- ======================================================== -->
-<!-- 3. ANIMATED SYSTEM STATUS / TYPING                       -->
-<!-- ======================================================== -->
-<a href="https://github.com/hustsak">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=16&duration=2800&pause=1000&color=00F3FF&center=true&vCenter=true&multiline=false&width=780&height=40&lines=%E2%9A%A1+SYS_STATUS%3A+ONLINE+%7C%7C+OPERATING+MODE%3A+BUILDING+%2F%2F+LEARNING+%2F%2F+RESEARCH;%F0%9F%A7%A0+NEURAL+CORE%3A+DATA+SCIENCE+%26+ARTIFICIAL+INTELLIGENCE+RESEARCH;%F0%9F%9B%B0%EF%B8%8F+BASE%3A+HANOI+UNIVERSITY+OF+SCIENCE+AND+TECHNOLOGY+(HUST)+%2F%2F+K69;%F0%9F%94%AD+EXPERIMENT%3A+COMPUTER+VISION+%E2%80%94+OBJECT+DETECTION+%26+TRACKING;%F0%9F%92%BE+OPERATOR%3A+VIRAKSAK+KOY+%7C%7C+MISSION%3A+BUILD+INTELLIGENT+SYSTEMS" alt="System Status Console Typing" />
-</a>
 
 <p align="center">
   <img src="https://img.shields.io/badge/OPERATOR-VIRAKSAK_KOY-00f3ff?style=for-the-badge&logo=target&logoColor=black&labelColor=060913" alt="Operator Viraksak Koy" />
