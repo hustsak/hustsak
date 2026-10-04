@@ -10,6 +10,13 @@
 <br/><br/>
 
 <!-- ======================================================== -->
+<!-- 3D FACE POINT CLOUD // COMPUTATIONAL IDENTITY            -->
+<!-- ======================================================== -->
+<img src="assets/face-pointcloud.gif" alt="Viraksak KOY 3D Face Point Cloud" width="100%">
+
+<br/><br/>
+
+<!-- ======================================================== -->
 <!-- 2. GITHUB CONTRIBUTION SNAKE (IMMEDIATELY AFTER HERO)   -->
 <!-- ======================================================== -->
 <picture>
