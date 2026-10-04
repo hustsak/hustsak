@@ -1,5 +1,13 @@
 <div align="center">
 
+<img src="./assets/neural-pointcloud.png" width="100%" alt="AI Neural Point Cloud"/>
+
+<h1>VIRAKSAK KOY</h1>
+<h3>AI & Data Science Student</h3>
+
+</div>
+div align="center">
+
 <!-- ======================================================== -->
 <!-- 1. HERO / NEURAL CORE                                    -->
 <!-- ======================================================== -->
