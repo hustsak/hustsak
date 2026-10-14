@@ -1609,3 +1609,4 @@
 [2026-10-13T14:52:19+07:00] research: implement feature extraction pipelines [log #1373]
 [2026-10-14T09:04:13+07:00] research: evaluate cross-validation performance [log #1374]
 [2026-10-14T22:16:41+07:00] research: clean and normalize dataset features [log #1375]
+[2026-10-14T20:16:51+07:00] research: refactor neural model evaluation metrics [log #1376]
