@@ -1611,3 +1611,4 @@
 [2026-10-14T22:16:41+07:00] research: clean and normalize dataset features [log #1375]
 [2026-10-14T20:16:51+07:00] research: refactor neural model evaluation metrics [log #1376]
 [2026-10-14T18:31:31+07:00] research: benchmark object tracking latency [log #1377]
+[2026-10-15T17:24:05+07:00] research: update exploratory data analysis notebooks [log #1378]
