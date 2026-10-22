@@ -18,6 +18,19 @@ jobs:
     timeout-minutes: 10
 
     steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
+
+      - name: Maintain Active Green Contribution Streak
+        run: |
+          git config user.name "Viraksak Koy"
+          git config user.email "viraksakkoy8@gmail.com"
+          python scripts/generate_activity.py --daily 3
+          git push origin main || echo "Push skipped"
+
       - name: Generate GitHub Contribution Grid Snake Plots
         uses: Platane/snk@v3
         with:
@@ -25,10 +38,12 @@ jobs:
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark&color_snake=#00f3ff&color_dots=#0d1117,#161b22,#003847,#008b9e,#00f3ff
-            dist/github-contribution-grid-snake-synthwave.svg?palette=github-dark&color_snake=#ff007a&color_dots=#0d1117,#241432,#5b1e6e,#9d4edd,#ff007a
             dist/github-contribution-grid-snake-matrix.svg?palette=github-dark&color_snake=#39ff14&color_dots=#0d1117,#002b09,#005c1b,#00b833,#39ff14
+            dist/github-contribution-grid-snake-emerald.svg?palette=github-dark&color_snake=#10b981&color_dots=#0d1117,#064e3b,#047857,#059669,#10b981
+            dist/github-contribution-grid-snake-synthwave.svg?palette=github-dark&color_snake=#ff007a&color_dots=#0d1117,#241432,#5b1e6e,#9d4edd,#ff007a
             dist/github-contribution-grid-snake-sunset.svg?palette=github-dark&color_snake=#ffaa00&color_dots=#0d1117,#331800,#663200,#b35900,#ffaa00
             dist/github-contribution-grid-snake.gif?color_snake=#00f3ff&color_dots=#0d1117,#161b22,#003847,#008b9e,#00f3ff&color_background=#060913
+            dist/github-contribution-grid-snake-green.gif?color_snake=#39ff14&color_dots=#0d1117,#002b09,#005c1b,#00b833,#39ff14&color_background=#060913
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN || secrets.GITHUB_TOKEN }}
 

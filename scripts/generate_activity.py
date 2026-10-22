@@ -101,5 +101,44 @@ def generate_contributions(
     print(f"\n[DONE] Successfully created {commit_count} high-density commits across the full year!")
 
 
+def generate_daily_contributions(
+    count=3,
+    author_name="Viraksak Koy",
+    author_email="viraksakkoy8@gmail.com",
+    log_file=".github/activity.log",
+):
+    print(f"Generating {count} daily active green contribution commits...")
+    base_date = datetime.now()
+    os.makedirs(os.path.dirname(log_file), exist_ok=True)
+
+    for i in range(count):
+        iso_date = base_date.strftime("%Y-%m-%dT%H:%M:%S+07:00")
+        topic = random.choice(RESEARCH_TOPICS)
+        message = f"research: {topic} [daily pulse #{i + 1}]"
+
+        with open(log_file, "a", encoding="utf-8") as f:
+            f.write(f"[{iso_date}] {message}\n")
+
+        env = os.environ.copy()
+        env["GIT_AUTHOR_NAME"] = author_name
+        env["GIT_AUTHOR_EMAIL"] = author_email
+        env["GIT_COMMITTER_NAME"] = author_name
+        env["GIT_COMMITTER_EMAIL"] = author_email
+        env["GIT_AUTHOR_DATE"] = iso_date
+        env["GIT_COMMITTER_DATE"] = iso_date
+
+        run_cmd(["git", "add", log_file])
+        run_cmd(["git", "commit", "-m", f"{message} [skip ci]"], env=env)
+
+    print(f"[DONE] Successfully added {count} active green contribution commits!")
+
+
 if __name__ == "__main__":
-    generate_contributions(days=365)
+    import sys
+
+    if "--daily" in sys.argv:
+        idx = sys.argv.index("--daily")
+        num = int(sys.argv[idx + 1]) if len(sys.argv) > idx + 1 else 3
+        generate_daily_contributions(count=num)
+    else:
+        generate_contributions(days=365)
