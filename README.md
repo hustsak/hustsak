@@ -1,13 +1,5 @@
 
-<!-- ======================================================== -->
-<!-- 1. HERO / NEURAL CORE                                    -->
-<!-- ======================================================== -->
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hero.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero.svg">
-  <img src="assets/hero.svg" alt="Viraksak KOY - AI & Data Science" width="100%">
-</picture>
-<br/><br/>
+
 
 <!-- ======================================================== -->
 <!-- 3D FACE POINT CLOUD // COMPUTATIONAL IDENTITY            -->
