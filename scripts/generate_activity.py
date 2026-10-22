@@ -29,42 +29,43 @@ RESEARCH_TOPICS = [
 ]
 
 
-def run_cmd(cmd, env=None):
-    res = subprocess.run(cmd, shell=True, env=env, capture_output=True, text=True)
+def run_cmd(cmd_list, env=None):
+    res = subprocess.run(cmd_list, env=env, capture_output=True, text=True)
     if res.returncode != 0:
-        print(f"Error running: {cmd}\n{res.stderr}")
+        print(f"Error running: {' '.join(cmd_list)}\n{res.stderr}")
         return False
     return True
 
 
 def generate_contributions(
-    days=180,
+    days=365,
     author_name="Viraksak Koy",
     author_email="viraksakkoy8@gmail.com",
     log_file=".github/activity.log",
 ):
-    print(f"Generating realistic activity for past {days} days...")
+    print(f"Generating dense high-activity green plots for past {days} days (1 full year)...")
     base_date = datetime.now()
     os.makedirs(os.path.dirname(log_file), exist_ok=True)
 
     commit_count = 0
-    # Walk forward from past date to present
+    # Walk forward from past date (365 days ago) to present
     for day_offset in range(days, -1, -1):
         target_day = base_date - timedelta(days=day_offset)
         is_weekend = target_day.weekday() >= 5
 
-        # Realistic probabilities:
-        # Weekdays: 75% active
-        # Weekends: 40% active
-        active_prob = 0.40 if is_weekend else 0.75
+        # 95% active on weekdays, 85% active on weekends
+        active_prob = 0.85 if is_weekend else 0.95
         if random.random() > active_prob:
             continue
 
-        # 1 to 4 commits on an active day
-        num_commits = random.choices([1, 2, 3, 4], weights=[0.4, 0.35, 0.15, 0.10])[0]
+        # 2 to 8 commits per day to generate diverse shades of green (levels 1-4)
+        num_commits = random.choices(
+            [2, 3, 4, 5, 6, 7, 8],
+            weights=[0.15, 0.25, 0.25, 0.15, 0.10, 0.06, 0.04],
+        )[0]
 
-        for c_idx in range(num_commits):
-            hour = random.randint(9, 22)
+        for _ in range(num_commits):
+            hour = random.randint(8, 23)
             minute = random.randint(0, 59)
             second = random.randint(0, 59)
             commit_time = target_day.replace(
@@ -87,15 +88,18 @@ def generate_contributions(
             env["GIT_AUTHOR_DATE"] = iso_date
             env["GIT_COMMITTER_DATE"] = iso_date
 
-            if not run_cmd(f'git add "{log_file}"'):
+            if not run_cmd(["git", "add", log_file]):
                 return
-            if not run_cmd(f'git commit -m "{message}"', env=env):
+            if not run_cmd(["git", "commit", "-m", message], env=env):
                 return
 
             commit_count += 1
 
-    print(f"\n[DONE] Successfully created {commit_count} historical commits!")
+            if commit_count % 100 == 0:
+                print(f"  ... created {commit_count} commits")
+
+    print(f"\n[DONE] Successfully created {commit_count} high-density commits across the full year!")
 
 
 if __name__ == "__main__":
-    generate_contributions(days=180)
+    generate_contributions(days=365)
