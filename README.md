@@ -103,14 +103,6 @@
   <img src="assets/neural-core.svg" alt="Classified AI Research Lab Architecture" width="100%">
 </div>
 
-| DIRECTIVE | CLASSIFICATION | STATUS | RESEARCH FOCUS |
-| :--- | :--- | :--- | :--- |
-| **CURRENT RESEARCH** | LEVEL-05 | `RUNNING` 🟢 | **Machine Learning for Business Intelligence & Predictive Analytics** |
-| **ACTIVE EXPERIMENT** | LEVEL-04 | `PROCESSING`🔵 | **Computer Vision — Object Detection & Multi-Object Tracking** |
-| **SPECIALIZATION I** | TACTICAL | `ENGAGED` 🟣 | **Machine Learning & Predictive Analytics Engine Architecture** |
-| **SPECIALIZATION II** | STRATEGIC | `ENGAGED` 🟣 | **Computer Vision & Intelligent Real-Time Surveillance Cameras** |
-| **SPECIALIZATION III** | FRONTIER | `ENGAGED` 🟣 | **Autonomous AI Agents & Multi-Modal Intelligent Systems** |
-
 ```
 ── PROTOCOL: TACTICAL EXECUTION PIPELINE ───────────────────────────────────────────
    THINK ──▶ EXPLORE ──▶ BUILD ──▶ TEST ──▶ IMPROVE ──▶ REPEAT (RESEARCH NEVER STOPS)
@@ -127,16 +119,16 @@
 ```
 ┌── [ACADEMIC SPRINT] ─────────────────────────────────────────────────────────────────┐
 │                                                                                      │
-│  [01] ⚡ ADVANCED DATA ANALYTICS & PROFESSIONAL AT GOOGLE COURSERA                             
+│  [01] ADVANCED DATA ANALYTICS & PROFESSIONAL AT GOOGLE COURSERA                             
 │                                                                                      │
-│  [02] 🛡️ INFORMATION SECURITY                                                        │
+│  [02] INFORMATION SECURITY                                                           │
 │       Cryptographic protocols, system defense, neural model & pipeline security      │
 │                                                                                      │
-│  [03] 📊 PROJECT MANAGEMENT                                                          │
+│  [03] PROJECT MANAGEMENT                                                             │
 │       Agile engineering workflows, sprint scoping, product lifecycle telemetry       │
 │                                                                                      │
-│  [04] 🗄️ DATABASE SYSTEMS                                                            │
-│       Relational architecture, schema normalization, high-throughput SQL indexing   │
+│  [04] DATABASE SYSTEMS                                                               │
+│       Relational architecture, schema normalization, high-throughput SQL indexing    │
 │                                                                                      │
 └──────────────────────────────────────────────────────────────────────────────────────┘
 ```
@@ -157,7 +149,7 @@ NEURAL CORE READOUT:
 ├───────────────────────────────────────────────┼───────────────────────────────────────────────┤
 │ Machine Learning & Predictive Modeling        │ [██████████████████████████████░░░░] 88%     │
 │ Computer Vision & Deep Learning               │ [████████████████████████████░░░░░░] 84%     │
-│ Data Engineering, Cleaning & Exploratory EDA  │ [████████████████████████████████░░] 92%     │
+│ Data Cleaning & Exploratory EDA               │ [████████████████████████████████░░] 92%     │
 │ Statistical Inference & Business Analytics    │ [██████████████████████████████░░░░] 86%     │
 │ Backend API Microservices (FastAPI / SQL)     │ [████████████████████████████░░░░░░] 82%     │
 │ Full-Stack Interface Engineering              │ [████████████████████████░░░░░░░░░░] 78%     │
@@ -185,21 +177,6 @@ NEURAL CORE READOUT:
 <!-- ======================================================== -->
 <!-- 9. TERMINAL / CONTACT                                    -->
 <!-- ======================================================== -->
-### 🖥️ NEURAL TERMINAL
-
-```bash
-root@hust-classified-lab:~$ sys_handshake --operator "VIRAKSAK KOY" --mode ACTIVE
-
-======================== [SECURE TERMINAL BROADCAST] ========================
- OPERATOR      : VIRAKSAK KOY
- IDENTITY      : AI & DATA SCIENCE STUDENT
- BASE          : HANOI UNIVERSITY OF SCIENCE AND TECHNOLOGY (HUST)
- LOCATION      : HANOI // VIETNAM [21.0075° N, 105.8431° E]
- STATUS        : ONLINE ● SYSTEM READY FOR COLLABORATION
- MISSION       : BUILD INTELLIGENT SYSTEMS
- FINAL MESSAGE : "RESEARCH NEVER STOPS."
-=============================================================================
-```
 
 <div align="center">
 
@@ -209,7 +186,7 @@ root@hust-classified-lab:~$ sys_handshake --operator "VIRAKSAK KOY" --mode ACTIV
 &nbsp;
 [![Email](https://img.shields.io/badge/ENCRYPTED_COMMS-viraksakkoy8%40gmail.com-ff007a?style=for-the-badge&logo=gmail&logoColor=white&labelColor=060913)](mailto:viraksakkoy8@gmail.com)
 &nbsp;
-[![Facebook](https://img.shields.io/badge/FACEBOOK-ViraksakKoy-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=060913)](https://www.facebook.com/ViraksakKoy)
+[![Facebook](https://img.shields.io/badge/FACEBOOK-ViraksakKoy-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=060913)](https://www.facebook.com/viraksak.koy.1)
 
 <br/>
 
